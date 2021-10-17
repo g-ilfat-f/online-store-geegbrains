@@ -1,0 +1,204 @@
+.footer-background {
+    position: absolute;
+    height: 448px;
+    width: 100%;
+
+    @include tablet {
+        height: 693px;
+    }
+}
+
+.footer-box {
+
+    @include tablet {
+        max-width: 440px;
+        padding-left: 10%;
+        margin-bottom: 140px;
+    }
+
+    @include mobile {
+        margin-bottom: 109px;
+    }
+}
+
+.footer__subscription-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.footer__subscription-title {
+    text-align: center;
+    max-width: 359px;
+    margin-right: 90px;
+
+    @include tablet {
+        max-width: none;
+    }
+}
+
+.footer__subscription-img {
+    margin: 97px 0 30px 0;
+
+    @include mobile {
+        margin: 54px 0 30px 50px;
+    }
+}
+
+.footer__subscription-text {
+    font-family: Lato;
+    @include font(20px, 24px, 400);
+    margin-bottom: 126px;
+
+    @include tablet {
+        margin-bottom: 48px;
+    }
+
+    @include mobile {
+        width: 343px;
+        margin-left: -17px;
+    }
+}
+
+.footer__button-title {
+    font-family: Lato;
+    @include font(24px, 38px, 700);
+    text-transform: uppercase;
+    margin-top: 150px;
+
+    @include tablet {
+        margin-top: 0;
+    }
+
+    @include mobile {
+        margin: 59px 0 0 60px;
+    }
+}
+
+.footer__subtitle-subtitle {
+    font-family: Lato;
+    @include font(18px, 30px, 400);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
+    @include tablet {
+        margin-bottom: 27px;
+    }
+
+    @include mobile {
+        @include font (14px, 21px, 400);
+        width: 271px;
+        margin-left: 20px;
+    }
+}
+
+.footer__form {
+    @include mobile {
+        width: 349px;
+        margin-left: -18px;
+    }
+}
+
+.footer__form-email {
+    padding: 0 64px 0 22px;
+    height: 49px;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    border-style: none;
+    background-color: $light-grey;
+} 
+
+.footer__form-email:focus {
+    outline: none;
+}
+
+.footer__button {
+    padding: 17px;
+    margin-left: -3px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+    background-color: $dark-pink;
+    color: $light-grey;
+    border-style: none;
+}
+
+.footer__button:hover {
+    opacity: 0.7;
+}
+
+.footer__button:active {
+    background: $white;
+    color: $dark-pink;
+    border: solid 1px $dark-pink;
+}
+
+.footer__copyright {
+    background-color: $black;
+    min-height: 79px;
+    position: relative;
+}
+
+.footer__copyright-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+
+.footer__copyright-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: $light-grey;
+    margin: 30px 0 30px 0;
+
+    @include tablet {
+        margin-left: 32px;
+    }
+
+    @include mobile {
+        margin: 0 0 9px 0;
+    }
+}
+
+.footer__copyright-item {
+    display: flex;
+
+    @include tablet {
+        margin-right: 32px;
+    }
+
+    @include mobile {
+        margin: 43px 0 40px 0;
+    }
+}
+
+.footer__copyright-title {
+    margin: 24px 0 24px 7px;
+}
+
+.footer__copyright-title-box {
+    fill: $white;
+}
+
+.footer__copyright-title-symbol {
+    fill: $black;
+}
+
+.footer__copyright-title-instagram {
+    fill: $dark-pink;
+}
+
+.footer__copyright-title {
+    margin: 24px 0 24px 7px;
+}
+
+.footer__copyright-title:hover {
+    opacity: 0.7;
+}

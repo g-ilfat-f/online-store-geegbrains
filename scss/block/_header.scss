@@ -1,0 +1,125 @@
+.header {
+    background-color: $black;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 74px;
+}
+
+.header__menu-box {
+    position: relative;
+    display: inline-block;
+}
+
+.header__menu {
+    position: absolute;
+    background-color: $white;
+    margin-top: -2px;
+    padding-bottom: 20px;
+    text-align: right;
+    display: none;
+}
+
+.header__menu-box:hover .header__menu {
+    display: block;
+}
+
+.header__menu-left {
+    margin: 9px 114px 24px 34px;
+    text-align: left;
+}
+
+.header__title {
+    font-family: Lato;
+    @include font(14px, 17px, 700);
+    text-transform: uppercase;
+}
+
+.header__menu-sub-item-title {
+    font-family: Lato;
+    @include font(14px, 17px, 400);
+    color: $dark-pink;
+    text-transform: uppercase;
+    margin: 24px 0 12px 0;
+}
+
+.header__menu-sub-ite-item {
+    font-family: Lato;
+    @include font(14px, 17px, 400);
+    margin-bottom: 11px;
+}
+
+.header__menu-cloze {
+    background-color: transparent;
+    border: 0;
+    margin: 16px 17px 0 0;
+}
+
+.header__cloze {
+    fill: $black;
+}
+
+.header__box {
+display: flex;
+}
+
+.header__logo {
+    margin: 18px 41px 19px 0;
+
+    @include tablet {
+        margin-left: 32px;
+    }
+
+    @include mobile {
+        margin: 18px 20px 19px 0;
+    }
+}
+
+.header__logo:hover {
+    opacity: 0.7;
+}
+
+.header__search-ico {
+    margin: 29px 0 20px 0;
+    fill: $footer-grey;
+}
+
+.header__search-ico:hover {
+    opacity: 0.7;
+}
+
+.header__search-ico:active {
+    fill: $dark-pink;
+}
+
+.header__ico {
+    margin: 27px 0 19px 33px;
+    fill: $footer-grey;
+
+    @include tablet {
+        margin-right: 11px;
+    }
+
+    @include mobile {
+        margin-right: 0;
+    }
+}
+
+
+.header__ico:hover {
+    opacity: 0.7;
+}
+
+.header__ico:active {
+    fill: $dark-pink;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+    margin: 31px 0 21px 0;
+}
+
+

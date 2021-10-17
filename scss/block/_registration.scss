@@ -1,0 +1,100 @@
+.registration-page__top {
+    padding: 60px 0 60px 0;
+    background: $light-pink;
+}
+
+.registration-page__title {
+    font-family: Lato;
+    @include font(24px, 29px, 400);
+    color: $dark-pink;
+    text-transform: uppercase;
+}
+
+.registration-page__container {
+    width: 550px;
+}
+
+.registration-page__form {
+    display: flex;
+    margin-top: 64px;
+    justify-content: space-between;
+}
+
+.registration-page__input {
+    margin-top: 20px;
+    padding: 13px 17px 16px 17px;
+    width: 360px;
+    color: $transparent-grey;
+}
+
+.registration-page__input:hover {
+    opacity: 0.7;
+}
+
+.registration-page__radio {
+    margin: 32px 0 33px 0;
+}
+
+.registration-page__input-text {
+    margin: 15px 0 39px 0;
+    color: $transparent-grey;
+    width: 360px;
+}
+
+.registration-page__input-button {
+    margin-bottom: 96px;
+    color: $white;
+    font-family: Lato;
+    @include font(14px, 17px, 400);
+    border: none;
+    background-color: $dark-pink;
+    padding: 16px 29px;
+    text-transform: uppercase;
+}
+
+.registration-page__input-button:hover {
+    opacity: 0.7;
+}
+
+.registration-page__input-button:active {
+    background: $white;
+    color: $dark-pink;
+    border: solid 1px $dark-pink;
+}
+
+.registration-page__button-arrow {
+    fill: $white;
+    margin-left: 20px;
+}
+
+.registration-page__item-text {
+    font-family: Lato;
+    @include font(24px, 29px, 300);
+    text-transform: uppercase;
+}
+
+.registration-page__text {
+    font-family: Lato;
+    @include font(24px, 29px, 300);
+    max-width: 652px;
+    margin: 22px 0 21px 0;
+}
+
+.registration-page__item {
+    margin-bottom: 16px;
+    font-family: Lato;
+    @include font(24px, 29px, 300);
+    fill: $black;
+}
+
+.registration-page__item-check {
+    margin-right: 22px;
+}
+
+
+
+.registration-page__page {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+}

@@ -1,0 +1,41 @@
+.page-header__block {
+    padding: 60px 0 60px 0;
+    background: $light-pink;
+
+    @include mobile {
+        text-align: center;
+        padding: 24px 0 46px 0;
+    }
+}
+
+.page-header__block-title {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.page-header__title {
+    font-family: Lato;
+    @include font(24px, 29px, 400);
+    color: $dark-pink;
+    text-transform: uppercase;
+}
+
+.page-header__block-position {
+    @include font (14px, 17px, 300);
+    text-transform: uppercase;
+
+    @include mobile {
+        margin-top: 24px;
+    }
+}
+
+.page-header__block-row {
+    color: $dark-pink;
+    @include font (14px, 17px, 700);
+}
+
+

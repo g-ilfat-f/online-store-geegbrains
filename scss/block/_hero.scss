@@ -8,14 +8,14 @@
 
 .hero__box {
     display: flex; 
-    width: 1600px;
+    width: 100%;
 }
 
 .hero__img {
 
     @include tablet {
-        height: 369px;
-        width: 24%;
+        height: 100%;
+        width: 50%;
         object-fit: contain;
     }
 

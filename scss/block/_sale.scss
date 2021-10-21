@@ -4,6 +4,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 65px;
+        align-items: center;
 
         @include tablet {
             margin-top: 20px;
@@ -30,7 +31,7 @@
         }
 
         @include mobile {
-            width: 343px;
+            width: 100%;
             min-height: 247px;
         }
     }
@@ -44,6 +45,7 @@
 
         @include mobile {
             min-height: 111px;
+            width: 100%;
         }
     }
 
@@ -58,17 +60,23 @@
     }
     
     .sale__link-for-women {
-        top: 105px;
-        left: 103px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         @include tablet {
-            top: 57px;
-            left: 39px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             }
 
             @include mobile {
-                top: 98px;
-                left: 94px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
     }
     
@@ -77,57 +85,75 @@
         left: 125px;
 
         @include tablet {
-            top: 57px;
-            left: 59px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             }
 
             @include mobile {
-                top: 98px;
-                left: 113px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
     }
     
     .sale__link-for-kids {
-        top: 105px;
-        left: 123px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         @include tablet {
-            top: 57px;
-            left: 61px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             }
 
             @include mobile {
-                top: 98px;
-                left: 113px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
     }
     
     .sale__link-accesories {
-        top: 65px;
-        left: 490px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         @include tablet {
-            top: 33px;
-            left: 288px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         @include mobile {
-            top: 30px;
-            left: 92px;
-        }
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
     }
+}
     
     .sale__item-accesories {
         margin-top: 32px;
+        position: relative;
 
         @include tablet {
             margin-top: 20px;
         }
 
         @include mobile {
-            margin-top: 0;
+            margin: 0 0 32px 0;
         }
     }
+
     
     .sale__text {
         font-size: 16px;

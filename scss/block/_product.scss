@@ -25,9 +25,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @include tablet {
+        flex-wrap: nowrap;
+        
+    }
 
     @include mobile {
-        margin-left: -10px;
+        flex-wrap: wrap;
+        
     }
 }
 
@@ -38,14 +44,29 @@
     position: relative;
 
     @include tablet {
-        margin-bottom: 15px;
+        margin: 0 0 15px 2%;
+    }
+
+}
+
+.product__item-disappear {
+    
+    @include tablet {
+        display: none;
+    }
+}
+
+.product__img {
+
+    @include mobile {
+        width: 100%;
     }
 }
 
 .product__img-overlay:before {
     content: '';
     width: 100%;
-    min-height: 420px;
+    height: 420px;
     position: absolute;
     top: 0;
     background: rgba(58, 56, 56, 0.86);
@@ -58,8 +79,9 @@
 .product__img-button {
     border: 1px solid $pink;
     position: absolute;
-    top: 32%;
-    left: 31%;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     background: none; 
     color: $pink;
     display: none;
@@ -93,11 +115,16 @@
     background-color: $light-grey;
     padding: 24px 29px 20px 16px;
     margin-top: -3px;
+    position: absolute;
 }
 
 .product__box-text {
     color: $grai;
     margin: 13px 0 18px 0;
+}
+
+.product__box-subtitle {
+    @include font (13px, 16px, 400);
 }
 
 .product__box-price {
@@ -114,15 +141,8 @@
     color: $dark-pink;
     padding: 14px 38px;
     background: $white;
-    margin: 18px 0 0 40%;
-
-    @include tablet {
-        margin: 15px 0 0 35%;
-    }
-
-    @include mobile {
-        margin: 41px 0 0 20%;
-    }
+    margin: 18px auto 0 auto;
+    display: block;
 }
 
 .product__button:hover {
@@ -132,4 +152,13 @@
 .product__button:active {
     background: $dark-pink;
     color: $white;
+}
+
+.product__margin {
+    margin-top: 129px;
+    margin-bottom: 108px;
+
+    @include mobile {
+        margin: 64px 0;
+    }
 }

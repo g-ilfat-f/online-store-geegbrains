@@ -1,23 +1,23 @@
-.registration-page__top {
-    padding: 60px 0 60px 0;
-    background: $light-pink;
-}
-
-.registration-page__title {
-    font-family: Lato;
-    @include font(24px, 29px, 400);
-    color: $dark-pink;
-    text-transform: uppercase;
-}
-
 .registration-page__container {
     width: 550px;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .registration-page__form {
     display: flex;
     margin-top: 64px;
     justify-content: space-between;
+
+    @include tablet {
+        margin-top: 40px;
+    }
+
+    @include mobile {
+        display: block;
+    }
 }
 
 .registration-page__input {
@@ -25,6 +25,14 @@
     padding: 13px 17px 16px 17px;
     width: 360px;
     color: $transparent-grey;
+
+    @include tablet {
+        width: 95%;
+    }
+
+    @include mobile {
+        width: 90%;
+    }
 }
 
 .registration-page__input:hover {
@@ -39,6 +47,10 @@
     margin: 15px 0 39px 0;
     color: $transparent-grey;
     width: 360px;
+
+    @include mobile {
+        max-width: 300px;
+    }
 }
 
 .registration-page__input-button {
@@ -50,6 +62,10 @@
     background-color: $dark-pink;
     padding: 16px 29px;
     text-transform: uppercase;
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
 }
 
 .registration-page__input-button:hover {
@@ -67,10 +83,26 @@
     margin-left: 20px;
 }
 
+.registration-page__item-box {
+
+    @include tablet {
+        margin-left: 42px;
+    }
+
+    @include mobile {
+        margin-left: 0;
+        margin-bottom: 100px;
+    }
+}
+
 .registration-page__item-text {
     font-family: Lato;
     @include font(24px, 29px, 300);
     text-transform: uppercase;
+
+    @include tablet {
+        @include font (16px, 19px, 300); 
+    }
 }
 
 .registration-page__text {
@@ -78,19 +110,32 @@
     @include font(24px, 29px, 300);
     max-width: 652px;
     margin: 22px 0 21px 0;
+
+    @include tablet {
+        @include font (16px, 19px, 300);
+    }
 }
 
 .registration-page__item {
+    display: flex;
     margin-bottom: 16px;
     font-family: Lato;
     @include font(24px, 29px, 300);
     fill: $black;
+
+    @include tablet {
+        @include font (16px, 19px, 300);
+    }
 }
 
 .registration-page__item-check {
     margin-right: 22px;
-}
+    margin-top: 7px;
 
+    @include tablet {
+        margin-top: 0;
+    }
+}
 
 
 .registration-page__page {

@@ -1,0 +1,17 @@
+.product-carousel {
+    position: absolute;
+    width: 100%;
+
+    @include tablet {
+        position: relative;
+    }
+}
+
+.product-carousel__icon {
+    background-color: $grai;
+    padding: 9px 13px;
+}
+
+.product-carousel__icon:active {
+    fill: $dark-pink;
+}

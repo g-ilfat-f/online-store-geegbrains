@@ -1,4 +1,4 @@
-.footer-background {
+.footer__background {
     position: absolute;
     height: 448px;
     width: 100%;
@@ -8,7 +8,7 @@
     }
 }
 
-.footer-box {
+.footer__box {
 
     @include tablet {
         max-width: 440px;
@@ -99,7 +99,7 @@
 .footer__form {
     @include mobile {
         width: 349px;
-        margin-left: -18px;
+        margin-left: -25px;
     }
 }
 
@@ -111,6 +111,13 @@
     border-style: none;
     background-color: $light-grey;
 } 
+
+.footer__form-email-prpduct {
+    @include mobile {
+        height: 57px;
+        width: 200px;
+    }
+}
 
 .footer__form-email:focus {
     outline: none;

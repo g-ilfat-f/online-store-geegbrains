@@ -1,12 +1,4 @@
-.registration-page__container {
-    width: 550px;
-
-    @include mobile {
-        width: 100%;
-    }
-}
-
-.registration-page__form {
+.registration-page {
     display: flex;
     margin-top: 64px;
     justify-content: space-between;
@@ -17,6 +9,14 @@
 
     @include mobile {
         display: block;
+    }
+}
+
+.registration-page__container {
+    width: 550px;
+
+    @include mobile {
+        width: 100%;
     }
 }
 

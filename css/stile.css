@@ -1052,28 +1052,28 @@ body {
   opacity: 0.7;
 }
 
+.registration-page {
+  display: flex;
+  margin-top: 64px;
+  justify-content: space-between;
+}
+@media (max-width: 1599px) {
+  .registration-page {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .registration-page {
+    display: block;
+  }
+}
+
 .registration-page__container {
   width: 550px;
 }
 @media (max-width: 767px) {
   .registration-page__container {
     width: 100%;
-  }
-}
-
-.registration-page__form {
-  display: flex;
-  margin-top: 64px;
-  justify-content: space-between;
-}
-@media (max-width: 1599px) {
-  .registration-page__form {
-    margin-top: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .registration-page__form {
-    display: block;
   }
 }
 

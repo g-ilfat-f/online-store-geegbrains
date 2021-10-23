@@ -80,6 +80,19 @@ body {
   text-transform: uppercase;
 }
 
+.header__menu-linc {
+  text-decoration: none;
+  color: #222222;
+}
+
+.header__menu-linc:hover {
+  color: #F16D7F;
+}
+
+.header__menu-linc:active {
+  color: #9F9F9F;
+}
+
 .header__menu-sub-item-title {
   font-family: Lato;
   font-size: 14px;
@@ -132,17 +145,45 @@ body {
   opacity: 0.7;
 }
 
+.header__search-container {
+  max-width: 28px;
+  max-height: 28px;
+  position: relative;
+}
+
 .header__search-ico {
   margin: 29px 0 20px 0;
   fill: #E8E8E8;
+  position: absolute;
 }
 
-.header__search-ico:hover {
-  opacity: 0.7;
-}
-
-.header__search-ico:active {
+.header__search-container:hover .header__search-ico {
   fill: #F16D7F;
+}
+
+.header__search-ico-form {
+  margin: 26px;
+}
+
+.header__search-input {
+  display: none;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .header__search-input {
+    width: 80px;
+  }
+}
+
+[type=search] {
+  padding: 10px 20px;
+  border: none;
+}
+
+.header__search-container:hover .header__search-input {
+  display: block;
 }
 
 .header__ico {
@@ -247,6 +288,35 @@ body {
     font-weight: 900;
     font-style: normal;
     margin-top: 148px;
+  }
+}
+
+.hero__focus-in-contract {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes hero__focus-in-contract {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
 }
 
@@ -664,6 +734,7 @@ body {
 
 .product__button:hover {
   background: #F8F3F4;
+  transform: scale(1.1);
 }
 
 .product__button:active {
@@ -1063,6 +1134,7 @@ body {
 
 .registration-page__input-button:hover {
   opacity: 0.7;
+  transform: scale(1.1);
 }
 
 .registration-page__input-button:active {
@@ -1376,6 +1448,7 @@ body {
 
 .shopping-cart__button-stile:hover {
   background: #F8F8F8;
+  transform: scale(1.1);
 }
 
 .shopping-cart__button-stile:active {
@@ -1425,6 +1498,8 @@ body {
 
 .shopping-cart__form-button:hover {
   background: #F8F8F8;
+  transform: scale(1.1);
+  margin-left: 5px;
 }
 
 .shopping-cart__form-button:active {
@@ -1501,6 +1576,7 @@ body {
 
 .shopping-cart__order-button:hover {
   opacity: 0.7;
+  transform: scale(1.1);
 }
 
 .shopping-cart__order-button:active {
@@ -1666,6 +1742,7 @@ body {
 
 .page-product__button:hover {
   opacity: 0.7;
+  transform: scale(1.1);
 }
 
 .page-product__button:active {

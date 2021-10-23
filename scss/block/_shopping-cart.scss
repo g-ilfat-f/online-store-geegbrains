@@ -180,6 +180,7 @@
 
 .shopping-cart__button-stile:hover {
     background: $light-grey;
+    transform: scale(1.1);
 } 
 
 .shopping-cart__button-stile:active {
@@ -222,6 +223,8 @@
 
 .shopping-cart__form-button:hover {
     background: $light-grey;
+    transform: scale(1.1);
+    margin-left: 5px;
 } 
 
 .shopping-cart__form-button:active {
@@ -290,6 +293,7 @@
 
 .shopping-cart__order-button:hover {
     opacity: 0.7;
+    transform: scale(1.1);
 }
 
 .shopping-cart__order-button:active {

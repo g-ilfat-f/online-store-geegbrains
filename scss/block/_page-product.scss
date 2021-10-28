@@ -1,0 +1,144 @@
+.page-product {
+    padding: 64px 0 64px 0;
+    text-align: center;
+    border: 1px solid $footer-grey;
+    position: relative;
+    margin-top: 45%;
+    z-index: 1;
+    background-color:$white;
+
+    @include tablet {
+        margin-top: 0;
+    }
+}
+
+.page-product__item-text {
+    @include font (14px,17px, 300);
+    text-transform: uppercase;
+    color: $dark-pink;
+    margin-bottom: 12px;
+}
+
+.page-product__pink-line {
+    fill: $dark-pink;
+    margin-bottom: 12px;
+}
+
+.page-product__tite {
+    @include font (18px, 22px, 300);
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    color: $light-black;
+
+    @include mobile {
+        margin-bottom: 31px;
+    }
+}
+
+.page-product__item-description {
+    color: $grai;
+    width: 55%;
+    margin: 0 auto 32px auto;
+
+    @include tablet {
+        width: 90%;
+    }
+
+    @include mobile {
+        @include font (14px, 20px, 300);
+        width: 95%;
+    }
+}
+
+.page-product__item-price {
+    @include font (24px, 29px, 300);
+    color: $dark-pink;
+    margin-bottom: 65px;
+
+    @include mobile {
+        margin-bottom: 32px;
+    }
+}
+
+.page-product__gray-line {
+    margin-bottom: 65px;
+
+    @include tablet {
+        width: 83%;
+    }
+
+    @include mobile {
+        width: 60%;
+        margin-bottom: 49px;
+    }
+}
+
+.page-product__parameters {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        width: 60%;
+    }
+
+    @include mobile {
+        width: 95%;
+    }
+}
+
+
+.page-product__parameters-text {
+    @include font (14px, 17px, 400);
+    text-transform: uppercase;
+    color: $light-black;
+    margin-bottom: 49px;
+
+    @include mobile {
+        @include font (10px, 12px, 400);
+        margin-bottom: 64px;
+    }
+}
+
+.page-product__parameters-button {
+    fill: $light-black;
+    margin: 0 0 2px 9px;
+}
+
+.page-product__parameters-button {
+    opacity: 0.7;
+}
+
+.page-product__parameters-button:active {
+    fill: $dark-pink;
+}
+
+.page-product__button {
+    @include font (16px, 19px, 400);
+    fill: $dark-pink;
+    color: $dark-pink;
+    background-color: $white;
+    border: 1px solid $dark-pink;
+    padding: 10px 56px 12px 23px;
+}
+
+.page-product__button:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.page-product__button:active {
+    color: $white;
+    background-color: $dark-pink;
+}
+
+.page-product__buttun-cart {
+    margin-bottom: -5px;
+}
+
+.page-product__button-text {
+    margin-left: 23px;
+}
+

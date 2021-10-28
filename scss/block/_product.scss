@@ -1,0 +1,155 @@
+.product__title {
+    margin: 97px 0 6px 0;
+    text-align: center;
+    font-family: Lato;
+    @include font(30px, 36px, 400);
+
+    @include mobile {
+        margin-top: 64px;
+    }
+}
+
+.product__text {
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grai;
+
+    @include tablet {
+        margin-bottom: 74px;
+    }
+}
+
+.product__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product__item {
+    width: 360px;
+    height: 581px;
+    margin-bottom: 30px;
+    position: relative;
+
+    @include tablet {
+        margin: 0 0 15px 2%;
+    }
+
+}
+
+.product__item-disappear {
+    
+    @include tablet {
+        display: none;
+    }
+}
+
+.product__img {
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.product__img-overlay:before {
+    content: '';
+    width: 100%;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    background: rgba(58, 56, 56, 0.86);
+}
+
+.product__img-overlay:before {
+    display: none;
+}
+
+.product__img-button {
+    border: 1px solid $pink;
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: none; 
+    color: $pink;
+    display: none;
+}
+
+.product__img-button:active {
+    background: $dark-pink;
+}
+
+.product__button-img {
+    margin: 10px 0 8px 9px;
+    fill: $pink;
+}
+
+.product__button-text {
+    margin: 14px 10px 13px 7px;
+    font-family: Lato;
+    @include font(14px, 17px, 400);
+}
+
+.product__item:hover .product__img-overlay:before,
+.product__item:hover .product__img-button { 
+    display: flex;
+}
+
+.product__img-button:focus {
+    opacity: 0.7;
+}
+
+.product__item-box {
+    background-color: $light-grey;
+    padding: 24px 29px 20px 16px;
+    margin-top: -3px;
+    position: absolute;
+}
+
+.product__box-text {
+    color: $grai;
+    margin: 13px 0 18px 0;
+}
+
+.product__box-subtitle {
+    @include font (13px, 16px, 400);
+}
+
+.product__box-price {
+    text-decoration: none;
+    color: $dark-pink;
+    font-family: Lato;
+    @include font(16px, 19px, 400);
+}
+
+.product__button {
+    border: 1px solid $dark-pink;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-pink;
+    padding: 14px 38px;
+    background: $white;
+    margin: 18px auto 0 auto;
+    display: block;
+}
+
+.product__button:hover {
+    background: $light-pink;
+    transform: scale(1.1);
+}
+
+.product__button:active {
+    background: $dark-pink;
+    color: $white;
+}
+
+.product__margin {
+    margin-top: 129px;
+    margin-bottom: 108px;
+
+    @include mobile {
+        margin: 64px 0;
+    }
+}

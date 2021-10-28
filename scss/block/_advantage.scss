@@ -1,0 +1,55 @@
+.advantage {
+    margin-top: 95px;
+    background-color: $black;
+    padding: 104px 0 103px 0;
+
+    @include tablet {
+        padding: 48px 0 16px 0;
+    }
+}
+.advantage__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        display: block;
+        max-width: 360px;
+    }
+}
+
+.advantage__item {
+    text-align: center;
+    max-width: 360px;
+}
+
+.advantage__img-delivery {
+    margin-bottom: 28px;
+    fill: $dark-pink;
+}
+
+.advantage__img-sales {
+    margin-bottom: 19px;
+    fill: $dark-pink;
+}
+
+.advantage__img-quality {
+    margin-bottom: 25px;
+    fill: $dark-pink;
+}  
+
+.advantage__title {
+    color: $light-grey;
+    font-family: Lato;
+    @include font(20px, 24px, 400);
+    margin-bottom: 16px;
+}
+
+.advantage__text {
+    color: $grai;
+
+    @include tablet {
+        margin-bottom: 48px;
+    }
+}
+
+

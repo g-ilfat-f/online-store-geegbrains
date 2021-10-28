@@ -1,0 +1,173 @@
+.sale {
+    .sale__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 65px;
+        align-items: center;
+
+        @include tablet {
+            margin-top: 20px;
+        }
+
+        @include mobile {
+            margin-top: 64px;
+        }
+    }
+    
+    .sale__item {
+        position: relative;
+        
+        @include mobile {
+            margin-bottom: 32px;
+        }
+    }
+    
+    .sale__item-img {
+        
+        @include tablet {
+            width: 232px;
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+        }
+    }
+
+.sale__item-img-accesories {
+        
+    @include tablet {
+        width: 100%;
+        min-height: 116px;
+        }
+
+        @include mobile {
+            min-height: 111px;
+            width: 100%;
+        }
+    }
+
+    .sale__link {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .sale__link:hover {
+        opacity: 0.7;
+    }
+    
+    .sale__link-for-women {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include tablet {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+            @include mobile {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    }
+    
+    .sale__link-for-men {
+        top: 105px;
+        left: 125px;
+
+        @include tablet {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+            @include mobile {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    }
+    
+    .sale__link-for-kids {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include tablet {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+            @include mobile {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    }
+    
+    .sale__link-accesories {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include tablet {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @include mobile {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    }
+}
+    
+    .sale__item-accesories {
+        margin-top: 32px;
+        position: relative;
+
+        @include tablet {
+            margin-top: 20px;
+        }
+
+        @include mobile {
+            margin: 0 0 32px 0;
+        }
+    }
+
+    
+    .sale__text {
+        font-size: 16px;
+        line-height: 19px;
+        color: $pink;
+        text-transform: uppercase;
+    }
+    
+    .sale__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $dark-pink;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+}

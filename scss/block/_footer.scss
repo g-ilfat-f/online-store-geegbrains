@@ -112,6 +112,13 @@
     background-color: $light-grey;
 } 
 
+.footer__form-email-width {
+
+    @include mobile {
+        width: 30%;
+    }
+}
+
 .footer__form-email-prpduct {
     @include mobile {
         height: 57px;

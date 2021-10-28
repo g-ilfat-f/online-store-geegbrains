@@ -4,6 +4,10 @@
     --dark-pink: #F16D7F;
     --grai:  #9F9F9F;
     --light-grey: #F8F8F8;
+    --light-pink: #F8F3F4;
+    --white: #FFFFFF;
+    --transparent-grey:#B1B1B1;
+    --footer-grey:#E8E8E8;
 }
 
 body {
@@ -33,7 +37,7 @@ body {
 }
 
 .header {
-    background-color: var(--black);;
+    background-color: var(--black);
 }
 
 .header__container {
@@ -55,12 +59,26 @@ display: flex;
     margin: 18px 41px 19px 0;
 }
 
+.header__logo:hover {
+    opacity: 0.7;
+}
+
 .header__search-ico {
     margin: 29px 0 20px 0;
+    fill: var(--footer-grey);
+}
+
+.header__search-ico:hover {
+    opacity: 0.7;
 }
 
 .header__ico {
     margin: 27px 0 19px 33px;
+    fill: var(--footer-grey);
+}
+
+.header__ico:hover {
+    opacity: 0.7;
 }
 
 .header__button {
@@ -69,15 +87,30 @@ display: flex;
     margin: 31px 0 21px 0;
 }
 
+/*стиль меню*/
+
+.header__menu {
+    width: 232px;
+}
+
 .hero {
+    background-color: var(--pink);
+}
+
+.hero__box {
     display: flex; 
-    background-color: var(--pink);;
+    width: 1600px;
 }
 
 .hero__wrp {
-    display: flex;
+    display: flex; 
     align-items: center;
     padding: 0 0 0 92px;
+}
+
+.hero__wrp-border {
+    fill: var(--dark-pink);
+    margin-right: 16px;
 }
 
 .hero__title {
@@ -115,6 +148,10 @@ text-transform: uppercase;
     position: absolute;
     text-align: center;
     text-decoration: none;
+}
+
+.sale__link:hover {
+    opacity: 0.7;
 }
 
 .sale__link-for-women {
@@ -185,10 +222,57 @@ text-transform: uppercase;
     width: 360px;
     height: 581px;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.product__img-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    position: absolute;
+    top: 0;
+    background: rgba(58, 56, 56, 0.86);
+}
+
+.product__img-overlay:before {
+    display: none;
+}
+
+.product__img-button {
+    border: 1px solid var(--pink);
+    position: absolute;
+    top: 32%;
+    left: 31%;
+    background: none; 
+    color: var(--pink);
+    display: none;
+}
+
+.product__button-img {
+    margin: 10px 0 8px 9px;
+    fill: var(--pink);
+}
+
+.product__button-text {
+    margin: 14px 10px 13px 7px;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.product__item:hover .product__img-overlay:before,
+.product__item:hover .product__img-button { 
+    display: flex;
+}
+
+.product__img-button:focus {
+    opacity: 0.7;
 }
 
 .product__item-box {
-    background-color: var(--light-grey);;
+    background-color: var(--light-grey);
     padding: 24px 29px 20px 16px;
     margin-top: -3px;
 }
@@ -209,7 +293,7 @@ text-transform: uppercase;
 }
 
 .product__button {
-    border: 1px solid var(--dark-pink);;
+    border: 1px solid var(--dark-pink);
     font-size: 16px;
     line-height: 19px;
     color: var(--dark-pink);;
@@ -218,9 +302,13 @@ text-transform: uppercase;
     margin: 18px 0 0 40%;
 }
 
+.product__button:hover {
+    opacity: 0.7;
+}
+
 .advantage {
     margin-top: 95px;
-    background-color: var(--black);;
+    background-color: var(--black);
     padding: 104px 0 103px 0;
 }
 
@@ -236,18 +324,21 @@ text-transform: uppercase;
 
 .advantage__img-delivery {
     margin-bottom: 28px;
+    fill: var(--dark-pink);
 }
 
 .advantage__img-sales {
     margin-bottom: 19px;
+    fill: var(--dark-pink);
 }
 
 .advantage__img-quality {
     margin-bottom: 25px;
+    fill: var(--dark-pink);
 }  
 
 .advantage__title {
-    color: var(--light-grey);;
+    color: var(--light-grey);
     font-family: Lato;
     font-size: 20px;
     font-style: normal;
@@ -260,13 +351,16 @@ text-transform: uppercase;
     color: var(--grai);;
 }
 
-.footer__subscription {
-    background-image: url(img/footer-background.jpg);
+.footer-background {
+    position: absolute;
+    height: 448px;
+    width: 100%;
 }
 
 .footer__subscription-item {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer__subscription-title {
@@ -314,22 +408,31 @@ text-transform: uppercase;
     border-bottom-left-radius: 35px;
     border-top-left-radius: 35px;
     border-style: none;
-    background-color: var(--light-grey);;
+    background-color: var(--light-grey);
 } 
+
+.footer__form-email:focus {
+    outline: none;
+}
 
 .footer__button {
     padding: 17px;
     margin-left: -3px;
     border-bottom-right-radius: 35px;
     border-top-right-radius: 35px;
-    background-color: var(--dark-pink);;
-    color: var(--light-grey);;
+    background-color: var(--dark-pink);
+    color: var(--light-grey);
     border-style: none;
 }
 
+.footer__button:hover {
+    opacity: 0.7;
+}
+
 .footer__copyright {
-    background-color: var(--black);;
+    background-color: var(--black);
     min-height: 79px;
+    position: relative;
 }
 
 .footer__copyright-container {
@@ -340,7 +443,7 @@ text-transform: uppercase;
 .footer__copyright-text {
     font-size: 16px;
     line-height: 19px;
-    color: var(--light-grey);;
+    color: var(--light-grey);
     margin: 30px 0 30px 0;
 }
 
@@ -350,11 +453,125 @@ text-transform: uppercase;
 
 .footer__copyright-title {
     margin: 24px 0 24px 7px;
-
 }
 
+.footer__copyright-title-box {
+    fill: var(--white);
+}
 
+.footer__copyright-title-symbol {
+    fill: var(--black);
+}
 
+.footer__copyright-title-instagram {
+    fill: var(--dark-pink);
+}
 
+.footer__copyright-title {
+    margin: 24px 0 24px 7px;
+}
+
+.footer__copyright-title:hover {
+    opacity: 0.7;
+}
+
+/* страница регистрации*/
+
+.registration-page__top {
+    padding: 60px 0 60px 0;
+    background: var(--light-pink);
+}
+
+.registration-page__title {
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    color: var(--dark-pink);
+    text-transform: uppercase;
+}
+
+.registration-page__form {
+    display: flex;
+    margin-top: 64px;
+    justify-content: space-between;
+}
+
+.registration-page__input {
+    margin-top: 20px;
+    padding: 13px 17px 16px 17px;
+    width: 360px;
+    color: var(--transparent-grey);
+}
+
+.registration-page__input:hover {
+    opacity: 0.7;
+}
+
+.registration-page__radio {
+    margin: 32px 0 33px 0;
+}
+
+.registration-page__input-text {
+    margin: 15px 0 39px 0;
+    color: var(--transparent-grey);
+    width: 360px;
+}
+
+.registration-page__input-button {
+    margin-bottom: 96px;
+    color: var(--white);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    border: none;
+    background-color: var(--dark-pink);
+    padding: 16px 29px;
+}
+
+.registration-page__input-button:hover {
+    opacity: 0.7;
+}
+
+.registration-page__button-arrow {
+    fill: var(--white);
+    margin-left: 20px;
+}
+
+.registration-page__item-text {
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.registration-page__text {
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px; 
+    max-width: 652px;
+    margin: 22px 0 21px 0;
+}
+
+.registration-page__item {
+    margin-bottom: 16px;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    fill: var(--black);
+}
+
+.registration-page__item-check {
+    margin-right: 22px;
+}
 
 

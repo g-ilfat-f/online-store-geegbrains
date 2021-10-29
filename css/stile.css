@@ -963,7 +963,7 @@ body {
   border-top-right-radius: 35px;
   background-color: #F16D7F;
   color: #F8F8F8;
-  border-style: none;
+  border: 1px solid #F16D7F;
 }
 
 .footer__button:hover {
@@ -1121,6 +1121,7 @@ body {
   background-color: #F16D7F;
   padding: 16px 29px;
   text-transform: uppercase;
+  border: solid 1px #FFFFFF;
 }
 @media (max-width: 767px) {
   .registration-page__input-button {
